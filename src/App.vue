@@ -11,7 +11,11 @@
 			<input v-model="num2" v-on:input="getBase()" type="text" class="form-control" id="num2" placeholder="Ingrese el segundo número">
 		</div>
       <br>
-      <h3>Base actual: {{base}}</h3>
+      <div class="form-group">
+			<label for="base">Base:</label>
+			<input v-model="base" type="text" class="form-control" id="base">
+		</div>
+
       <div class="buttons">
       <button type="button" @click="addition()" class="btn btn-primary">Sumar</button>
 		<button type="button" @click="subtraction()" class="btn btn-primary">Restar</button>
